@@ -11,7 +11,7 @@
   overflow: auto;
 }
 #site-name {
-  color: firebrick;
+  color: yellowgreen;
   margin: 12px 24px;
   font-size: 35px;
   font-family: "Audiowide", cursive;
@@ -78,26 +78,35 @@
   padding: 4px 6px;
 }
 #background-img button {
-  background-color: yellowgreen; /* Green */
-  border: none;
+  background-color: yellowgreen;
+  border-color: grey;
+  border-radius: 25px;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
+  font-weight: bold;
   margin: 14px;
+  cursor: pointer;
 }
 
 /* Services */
-
 #services {
-  width: 100%;
-  height: 300px;
+  background-color: #eee;
+}
+#services > h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+#services-box {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: bisque;
-  border: 2px solid black;
+
+  height: 350px;
 }
 .services-detail {
   width: 30%;
@@ -118,6 +127,71 @@
 /*Contact*/
 #contact {
   width: 100%;
-  height: 150px;
-  background-color: rgba(248, 239, 113, 0.904);
+  height: 600px;
+  background: url(../images/Contact.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#contact > h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+#contact-div form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0px;
+  margin-top: 18px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border: 0;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  width: 40%;
+}
+input[type="email"] {
+  padding: 10px;
+  margin: -21px 0px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border: 0;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  width: 40%;
+}
+#contact-div form textarea {
+  width: 40%;
+  padding: 10px;
+  margin: 12px 0px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border: 0;
+  border: 2px solid #eee;
+  border-radius: 10px;
+}
+#submit {
+  background-color: yellowgreen;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  padding: 6px;
+  cursor: pointer;
+  border: none;
+  margin-top: -17px;
+}
+
+#submit:hover {
+  border: none;
+  background: rgb(102, 255, 0);
+  box-shadow: 0px 0px 1px rgb(184, 173, 173);
+}
+.center {
+  text-align: center;
 }
