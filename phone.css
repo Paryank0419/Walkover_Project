@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.box1 {
+  width: 90%;
+  height: 600px;
+  background-color: #ffde59;
+  margin: 1em 1em;
+}
+.box2 {
+  width: 90%;
+  height: 600px;
+  background-color: #ffde59;
+  margin: 1em 1em;
+}
+.box3 {
+  width: 90%;
+  height: 600px;
+  background-color: #ffde59;
+  margin: 1em 1em;
+}
